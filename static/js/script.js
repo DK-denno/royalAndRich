@@ -32,6 +32,14 @@ $(document).ready(function(){
   $('.banner-heading').fadeIn(7000);
   $('.button').animate({
     opacity: '2',
+  },10000,'swing')
+  $('.banner-heading').animate({
+    opacity: '2',
+    marginLeft: '600px'
+  },10000,'swing')
+  $('.display_image').animate({
+    opacity: '2',
+    marginTop: '100px'
   },10000,'swing') 
 
   if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300) {
