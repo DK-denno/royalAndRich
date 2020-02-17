@@ -1,0 +1,45 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <title style="font-family: 'Calligraffitti', cursive;">Home-Royal and Rich</title>
+  
+  {% block styles %}
+
+  {% bootstrap_css %}
+
+  <link rel="icon" href="http://royalandrich.com/wp-content/uploads/2019/11/cropped-Capture-16-192x192.png" sizes="192x192" />
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ownNavbar.css' %}">
+  <link rel="stylesheet" href="{% static 'css/body.css' %}">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+  {% endblock %}
+
+</head>
+
+<body>
+    {% include "base/navbar.html" %}
+
+    {% block content %}
+
+    {%endblock%}
+  
+    {% block scripts %}
+    {% bootstrap_javascript %}
+    {% endblock %}
+    {% include "base/footer.html" %}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+</html>
