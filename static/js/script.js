@@ -14,23 +14,12 @@ $(document).ready(function(){
       
       function scrollFunction() {
         
-      // if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
-      //   $("#card").fadeIn(2000);
-      //   $("#card2").fadeIn(3000);
-      //   $("#card3").fadeIn(4000);
-      // }else{
-      //   $("#card").fadeOut(2000);
-      //   $("#card2").fadeOut(3000);
-      //   $("#card3").fadeOut(4000);
-      // }
-      // if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
-      //   //
-      //   $("#card4").fadeIn(2000);
-      //   $("#card5").fadeIn(3000);
-      //   $("#card6").fadeIn(4000);
-      // }else{
-
-      // }
+      if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        $("#suscribe").animate({
+          opacity: '2',
+        },4000) 
+      }
+      
   
     }
 

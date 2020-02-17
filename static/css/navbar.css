@@ -82,16 +82,18 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 .button{
   opacity:0;
+  margin-left: 450px;	
+  margin-top: 120px;
 }
 .banner-heading{
   /* display: none; */
-	font-family: 'Lobster', cursive;
-  font-size: 30px;
-  margin-left: 600px;
-  margin-top: -400px;
+	/* font-family: 'Lobster', cursive; */
+    font-size: 26px;
+  	margin-left: 600px;
+  	margin-top: -500px;
   /* font-weight: 400; */
   /* line-height: 100px; */
-  margin-bottom: 100px;
+   	margin-bottom: -100px;
 	color:white;
 }
 .banner-sub-heading{
@@ -171,14 +173,14 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
  
 .display_image{
-  margin-left: 150px;
+  margin-left: 50px;
   margin-top: 100px;
 }
 
-.image{
+/* .image{
   padding: 5px;
   border: black;
-}
+} */
 .desc{
   color:aqua;
 }
@@ -186,4 +188,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   background-image: url('');
   background-position: fixed;
   
+}
+.offerss{
+	background-image: url('https://images.unsplash.com/photo-1542747729-385167b69202?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+	padding: 100px;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	opacity: 10;
 }

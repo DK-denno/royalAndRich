@@ -11,7 +11,7 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
     <div class="container">
     <!-- Brand -->
-    <a class="navbar-brand" href="#"><span>First</span>Last</a>
+    <a class="navbar-brand" href="/"><span>Personal</span>Development<span>Institute</span> </a>
   
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -24,26 +24,25 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}#desc">About</a>
-        </li>
+        
         <!-- Dropdown -->
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact Us</a>
-        </li> 
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
             Trm-classes
           </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">link 1</a>
-            <a class="dropdown-item" href="#">Link 2</a>
-            <a class="dropdown-item" href="#">Link 3</a>
-            <a class="dropdown-item" href="#">Link 4</a>
-            <a class="dropdown-item" href="#">Link 5</a>
-            <a class="dropdown-item" href="#">Link 6</a>
+          <div class="dropdown-menu" style="color: black;" >
+            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Children</a>
+            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Teens</a>
+            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Young Adults</a>
+            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for Adults</a>
+            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for Entrepreneurs</a>
+            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for the Retired to Refired</a>
           </div>
         </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact Us</a>
+                                  </li> 
       </ul>
     </div>
     </div>
@@ -52,54 +51,37 @@
   <div class="banner">
     <div class="container">
       
-      <div class="banner-text">
-        
-        <img class="display_image" src="{% static 'images/image1.jpeg' %}" alt="">
-       
-          <div class="banner-heading">
-            <div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+      <div class="banner-text">      
+       <div class="col-md-4">
+        <img class="display_image" src="{% static 'images/image.jpeg' %}" alt="">
+       </div>
+       <div class="col-md-12">
+        <div class="banner-heading">
+            <div class="row" style="color:white" >Welcome to Personal Development Institute whose mission is to unlock what is innately within every human being. We unlock human capital through training, teaching & coaching.
+              Personal Development Institute has been in operation since 7th April, 2010. We have run various programs over the years reaching different age groups in Kenya and beyond.              
+              We are a market place platform that has helped many individuals to discover & clarify their life’s purpose, passion & unique gifts  </div>
         </div>
+       </div>
     <div class="col-md-12">
-      <button type="button" style="margin-left: 600px;" class=" button btn btn-warning text-dark btn-banner">Get started</button>
+      <br>
+      <a href="{% url 'classes' %}">
+      <button type="button"  class=" button btn btn-warning text-dark btn-banner">Get started</button>
+      </a>
     </div>
   </div>
 </div>
 </div>
-</div>
-<div class="cont">
-<div class="container">
-  <div class="row" style="padding: 30px;"></div>
-  <div class="row" style="padding: 40px;">
-    
-    <div class="col-md-5">
-      <br<br>
-      <img id="image" src="{% static 'images/image1.jpeg' %}" alt="">
-    </div>  
-    <div class="col-md-1"></div>
-    <div class="col-md-5" id="desc">
-      <br><br><br><br>
-        <span>Jane Doe</span> is an impeccable, transformational and highly intuitive Leadership Curator. 
-        She is an Advocate of the High Court of Kenya. She has extensive experience in the legal profession
-        spanning well over 17 years. She has worked in private legal practice, as an executive in the
-        Corporate sector as well as the Public sector. Her latest engagement was with Government of
-        Kenya where she worked with the Central Bank of Kenya and the Financial Reporting 
-      Centre respectively.
-      <br><br><br><br>
-      <a href="{% url 'classes' %}" class="btn btn-primary mr-2 mb-2">Learn More</a>
-    </div>
-  </div>
- </div>
 </div>
   </div>
 
-<h4 class="ui horizontal header divider" id="divider" >
+<h4 class="ui horizontal header divider" id="divider suscribe">
   <a href="{% url 'home' %}#divider">Be the first to know</a>
 </h4>
 <div class="row">
    <div class="col-md-3"></div>
 <div class="col-md-6">
      <div>
-        <form  action="/" method="POST" >
+        <form id="suscribe" action="/" method="POST" >
             {% csrf_token %}
             {% bootstrap_form subscriberForm %}<br>
             <button type="submit" class="btn btn-outline-dark" style="margin-left: 250px;" >Subscribe</button>

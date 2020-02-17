@@ -66,3 +66,32 @@
    background-repeat: no-repeat;
    background-position: center;
 }
+#offers {
+	background: url('https://images.unsplash.com/photo-1581562557660-9cbe766720c7?ixlib=rb-1.2.1&dpr=1&auto=format&fit=crop&w=525&q=60') no-repeat center center;
+	-webkit-background-attachment: fixed;
+  background-attachment: fixed;
+	background-color: #222;
+	background-size: cover;
+	position: relative;
+   height: 550px;
+}
+#offers:before{
+   /* background-image: url(''); */
+   content: "";
+	background-color: rgba(26, 30, 35, 0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.offers{
+   padding: 70px;
+}
+.join{
+   padding: 80px;
+   background-color: black;
+
+}
+#suscribe{
+   opacity: 0;
+}
