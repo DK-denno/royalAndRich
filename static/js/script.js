@@ -37,6 +37,12 @@ $(document).ready(function(){
     opacity: '2',
     marginLeft: '600px'
   },4000,'swing')
+  
+  $('.cont').animate({
+    opacity: '2',
+    marginLeft: '50px'
+  },5000,'swing') 
+
   $('.display_image').animate({
     opacity: '2',
     marginTop: '100px'
@@ -46,5 +52,27 @@ $(document).ready(function(){
         $(".abouts").fadeIn(4000);
            
     };
-
+    //select box syntax
+    $('.catss').click(function(){
+      var value =   $('.catss option:selected').text()
+      switch(value){
+        case "Choose Category":
+          alert('rada');
+          break;
+        case "TRM for Children":
+          alert('rada');
+          break;
+        case "TRM for Teens":
+          alert('rada');
+          break;
+        case "TRM for Young Adults":
+            alert('rada');
+        case "TRM for Adults":
+            alert('rada');
+        case "TRM for Enterpreneurs":
+            alert('rada');
+        case "TRM for the retired":
+            alert('rada');
+      }
+    });
 });

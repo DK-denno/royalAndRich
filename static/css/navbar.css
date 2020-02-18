@@ -82,13 +82,13 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 .button{
   opacity:0;
-  margin-left: 450px;	
+  margin-left: 700px;	
   margin-top: 120px;
 }
 .banner-heading{
   /* display: none; */
 	/* font-family: 'Lobster', cursive; */
-    font-size: 26px;
+    font-size: 18px;
   	margin-left: 600px;
   	margin-top: -500px;
   /* font-weight: 400; */
