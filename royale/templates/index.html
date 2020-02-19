@@ -29,15 +29,13 @@
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            Trm-classes
+            Programs
           </a>
           <div class="dropdown-menu" style="color: black;" >
-            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Children</a>
-            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Teens</a>
-            <a class="dropdown-item" href="{% url 'classes' %}#offerss">TRM for Young Adults</a>
-            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for Adults</a>
-            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for Entrepreneurs</a>
-            <a class="dropdown-item" href="{% url 'classes' %}#last">TRM for the Retired to Refired</a>
+            <a class="dropdown-item" href="/classes/3/">Transformed and Renewed Minds</a>
+            <a class="dropdown-item" href="/classes/0/">Think Shift and Change</a>
+            <a class="dropdown-item" href="/classes/1/">Full DISC personality training</a>
+            <a class="dropdown-item" href="/classes/2/">The Children's Profile</a>
           </div>
         </li>
         <li class="nav-item">
@@ -52,20 +50,30 @@
     <div class="container">
       
       <div class="banner-text">      
+     
        <div class="col-md-4">
-        <img class="display_image" style="margin-right: 1000px;" src="{% static 'images/image.jpeg' %}" alt="">
+        <img class="display_image" style="margin-right: 1000px;" src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_390/http://royalandrich.com/wp-content/uploads/2020/02/irene.png" alt="" width="400" height="500" >
        </div>
        <div class="col-md-12">
         <div class="banner-heading" style="opacity: 0; margin-left: 1000px;" >
           <br><br>
-            <div class="row welc " style="color:white" >Welcome to Personal Development Institute whose mission is to unlock what is innately within every human being. We unlock human capital through training, teaching & coaching.
-              Personal Development Institute has been in operation since 7th April, 2010. We have run various programs over the years reaching different age groups in Kenya and beyond.              
-              We are a market place platform that has helped many individuals to discover & clarify their life’s purpose, passion & unique gifts  </div>
-        </div>
+            <div class="row welc " style="color:white" >
+              <div class="col-md-3">
+                <br><br>
+                <img class="dispImage" src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_81,h_149/http://royalandrich.com/wp-content/uploads/2019/11/Capture.png" alt="">
+              </div>
+              <div class="col-md-9">
+                <br><br><br><br>
+                Welcome to Personal Development Institute whose mission is to unlock what is innately within every human being. We unlock human capital through training, teaching & coaching.
+                Personal Development Institute has been in operation since 7th April, 2010. We have run various programs over the years reaching different age groups in Kenya and beyond.              
+                We are a market place platform that has helped many individuals to discover & clarify their life’s purpose, passion & unique gifts  </div>
+       
+              </div>
+            </div>
        </div>
     <div class="col-md-12">
       <br>
-      <a href="{% url 'classes' %}">
+      <a href="/classes/0/">
       <button type="button"  class=" button btn btn-warning text-dark btn-banner">Get started</button>
       </a>
     </div>
@@ -74,16 +82,17 @@
 </div>
 </div>
   </div>
+  <div id="class">
 <div class="categories">
   <div class="container">
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-        <br><br><br>
+        
         <form action="" method="post">
           <div class="form-group">
             <select type="submit" class="form-control catss" id="exampleFormControlSelect1">
-              <option value="1" >Choose Category</option>
+              <option value="1" >Choose Class</option>
               <option value="2" >TRM for Children</option>
               <option value="3" >TRM for Teens</option>
               <option value="4" >TRM for Young Adults</option>
@@ -96,99 +105,107 @@
       </div>
       <div class="col-md-3"></div>
     </div>
-    <div class="row" id="offerss" >
+  </div>
+  <br><br>
+    <div class="container">
+    <div class="row">
       <div id="first" class="col-md-4">
           <div class="card child" id="card" style="width: 18rem;">
+            <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://royalandrich.com/wp-content/uploads/2019/11/img-large11-300x179.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for Children</h5>
                 <h6 class="card-subtitle mb-2 text-muted">This is a course for children aged between 9-13 years.</h6>
-                <p class="card-text">Children need to develop a concept of life skills to go hand in hand with academic knowledge. This course is designed to help children understand who they are and why they and others, think and act the way they do.
-
-                  Life skills have a major impact on a child’s overall performance. It’s a great benefit when children understand their personality styles and how to communicate with family members and other people.
-                  
-                  Self-Awareness will be strengthened through the use of the Children’s Profile.
-                  
-                  Beyond grades, children will be empowered to appreciate similarities and differences in one another.</p>
-               
+                <p class="card-text">
+                  Children need to develop a concept of life skills to go hand in hand with academic knowledge.
+                  This course is designed to help children understand who they are and why they and others,
+                  think and act the way they do.
+                                 
               </div>
+              <br><br>
             </div>
       </div>
       <div class="col-md-4">
           <div class="card teen" id="card2" style="width: 18rem;">
+            <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://royalandrich.com/wp-content/uploads/2020/01/course-5-300x200.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for Teens</h5>
                 <h6 class="card-subtitle mb-2 text-muted">This is a course for teenagers</h6>
                 <p class="card-text">
-                  The teenage years can be a difficult time to navigate through both for the teens and their parents. At PDI we believe the narrative can be changed through life skills.
-
-                  This program is tailored for the teen who is answering questions about their identity and future. We teach Self Awareness, Emotional Intelligence, Everyday Leadership skills, Communication Skills, Career and general Personal Development skills.We use assessment tools to enhance the training.
-                  
-                  We have also worked with teenagers who face the challenge of drug addiction and lost focus in their academics as a result.
-                  
-                  TRM for Teens is a powerful program because all lasting beings in the mind.
+                  The teenage years can be a difficult time to navigate through both for the teens and their parents.
+                  At PDI we believe the narrative can be changed through life skills.
+                  This program is tailored for the teen who is answering questions about their identity and future.
                 </p> 
               </div>
             </div>
       </div>
       <div class="col-md-4">
           <div class="card youngAdult" id="card3" style="width: 18rem;">
+            <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://royalandrich.com/wp-content/uploads/2019/11/img-large6-300x200.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for Young Adults</h5>
                 <h6 class="card-subtitle mb-2 text-muted">This is a course for young adults eg:campus students</h6>
                 <p class="card-text">
-                  The majority of the Kenyan population is made up of young adults who are in universities, colleges or working as they study. This program is tailored to transform the youth to think differently and to position them for the global changes inthe job marketand life in general.
-
-                  We believe that our youth can thrive while they are more self-aware. We teach them to understand their life purpose, how to turn their passion into profitable ventures, emotional, financial, spiritual and social intelligence & how to engage in clean fun.
+                  This program is tailored to transform the youth to think differently 
+                  and to position them for the global changes inthe job marketand life in general.
+                  We believe that our youth can thrive while they are more self-aware.
                 </p>
               </div>
             </div>
       </div>
   </div>  
+  <br><br> <br><br> 
   <div class="row">
-    <br><br>
       <div id="last" class="col-md-4">
-          <div class="card Adults"  id="card4" style="width: 18rem;">
+          <div class="card Adult"  id="card4" style="width: 18rem;">
+            <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://royalandrich.com/wp-content/uploads/2019/11/img-large1-300x199.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for Adults</h5>
                 <h6 class="card-subtitle mb-2 text-muted">A course unit for adults</h6>
-                <p class="card-text">Through the TRM for Adults class, many destinies have been rebirthed and reshaped.This has been our major clientele base for the past 9 years because anyone can redefine the trajectory of your life at any season in life.
-
-                  The adults have the advantage of reflecting on their past experiences. This helps them to unlearn, learn and relearn.
-                  
-                  We havemany transformational stories from the adults that have gone through this class. The most celebrated modules in TRM adults are Life Purpose, Financial, Spiritual & Emotional Intelligence; Health and Wellness, writing of the 5 year strategic plan.</p>
-                
+                <p class="card-text">
+                  The adults have the advantage of reflecting on their past experiences.
+                  This helps them to unlearn, learn and relearn. 
+                  We havemany transformational stories from the adults that have gone through this class.
+                  The most celebrated modules in TRM adults are Life Purpose, Financial,
+                  Spiritual & Emotional Intelligence; Health and Wellness, writing of the 5 year strategic plan.
+                </p>
+                <br>
               </div>
             </div>
       </div>
       <div class="col-md-4">
-          <div class="card entrepreneur" id="card5" style="width: 18rem;">
+          <div class="card entrepreneur" id="card5" style="width: 20rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTwQbHd-gM1UUFw9w4xkK38VCN7NmA6k286jyVNad_DsCPnp1J" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for Entrepreneurs</h5>
                 <h6 class="card-subtitle mb-2 text-muted">A course unit for businesspeople and entrepreneurs</h6>
-                <p class="card-text">This is tailored for those transitioning from formal employment and for those repositioning ongoing businesses.The dynamics in the business world require constant learning and the ability to adapt to change.
-
-                  The modules taught in this course can be summed up as Thinking for a Change. This is purely one-to-one coaching that is client-driven based on the business needs.
-                  
-                  As a result ofretrenchment, forced resignationand dismissal, some people have been forced to resign; and many find themselves in the waters of entrepreneurship to meet their day-to-day financial needs. This coaching is applicable to them as well.
-                  
-                  Whether you are a seasoned entrepreneur or a start-up, this coaching will provide the much needed support, encouragement and accountability.</p>
-                
+                <p class="card-text">This is tailored for those transitioning from formal employment and for those
+                  repositioning ongoing businesses.The dynamics in the business world require constant
+                  learning and the ability to adapt to change. The modules taught in this course can
+                  be summed up as Thinking for a Change. This is purely one-to-one coaching that is 
+                  client-driven based on the business needs.</p>                 
+                <br>
               </div>
             </div>
       </div>
       <div class="col-md-4">
-          <div class="card retired " id="card6" style="width: 18rem;">
+          <div class="card retired" id="card6" style="width: 18rem;">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">TRM for the Retired to Refired</h5>
                 <h6 class="card-subtitle mb-2 text-muted">A unit for retired personel</h6>
-                <p class="card-text">Retiring from formal employment can create some distresseven when one is well prepared and has gone through formal retirement programs that are provided by employers.
+                <p class="card-text">This program is tailored to redefine the next phase
+                  of life after retirement. A meaningful and power-packed adventure is 
+                  possible after retirement. At PDI we believe in being refired not retired.
+                  We have many success stories of those who came as retirees and refired their lives.
+                  You can live your best life fulfilling life goals and impacting generations through
+                  God-given purpose.
 
-                  This program is tailored to redefine the next phase of life after retirement. A meaningful and power-packed adventure is possible after retirement. At PDI we believe in being refired not retired.
-                  
-                  We have many success stories of those who came as retirees and refired their lives. You can live your best life fulfilling life goals and impacting generations through God-given purpose.</p>
+                </p>
+                </span>
               </div>
             </div>
       </div>
+  </div>
   </div>
 </div>
 <h4 class="ui horizontal header divider" id="divider suscribe">
@@ -207,5 +224,5 @@
 </div>
   <div class="col-md-3"></div>
 </div>
-</div><br><br><br>
+</div>
 {% endblock %}

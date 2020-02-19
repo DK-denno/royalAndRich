@@ -60,24 +60,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
   background-color: #212529;
 } */
 .banner {
-	background: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg) no-repeat center center;
+	background: url('../images/city.jpeg');
 	-webkit-background-attachment: fixed;
-  background-attachment: fixed;
-	background-color: #222;
+  	background-attachment: fixed;
+	/* background-color: #222; */
 	background-size: cover;
-  padding: 0;
-  height: 800px;
+  	padding: 0;
+  	height: 800px;
 	position: relative;
 }
-.banner:before {
-	content: "";
-	background-color: rgba(26, 30, 35, 0.85);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+
 
 
 .button{
@@ -174,8 +166,11 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
  
 .display_image{
-  margin-left: 50px;
-  margin-top: -500px;
+  margin-left: -50px;
+  margin-top: -800px;
+}
+.dispImage{
+	margin-left: 80px;
 }
 
 /* .image{

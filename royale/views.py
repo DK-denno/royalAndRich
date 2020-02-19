@@ -27,8 +27,8 @@ def index(request):
 def about(request):
     return render(request,"about_us.html")
 
-def classes(request):
-    return render(request,"classes.html",{})
+def classes(request,code):
+    return render(request,"classes.html",{"code":code})
 
 
 

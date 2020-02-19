@@ -1,136 +1,212 @@
 {% extends 'base/base.html' %}
 {% load bootstrap4 %}
+{% load static %}
 {% block content %}
-<br><br>
-<div id="classes">
-  <div class="container">
-    
-
-    <br><br><br> 
-    <div class="row" id="offers" >
-      <div class="offers">
-        <br><br>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/http://royalandrich.com/wp-content/uploads/2019/11/pdi-slider-image-1-300x199.jpg" width="500" height="300"  alt="">
+<div class="display">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+    <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="/"><span>Personal</span>Development<span>Institute</span> </a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        <!-- Dropdown -->
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Trm-classes
+          </a>
+          <div class="dropdown-menu" style="color: black;" >
+            <a class="dropdown-item" href="/classes/3/">Transformed and Renewed Minds</a>
+            <a class="dropdown-item" href="/classes/0/">Think Shift and Change</a>
+            <a class="dropdown-item" href="/classes/1/">Full DISC personality training</a>
+            <a class="dropdown-item" href="/classes/2/">The Children's Profile</a>
           </div>
-          
-          <div class="col-md-6">
-              <h1><b>What we offer</b></h1>
-              <p style="color: black;" >It is a school with a different goal from what we are used to in traditional classrooms. PDI is practical in its approach and offers no sit-in examinations; we believe that life itself is a classroom with its own exams that are ongoing until we transition from this planet. However, we write term papers but in the form of 5-year strategic plans. The plans are life goals that our students pursue over the years. In our 9 years of operation, we have had the joy of our Alumni sharing their accomplishments after completing our programs 5 years or later having achieved over 80% of their goals.
-
-                We run programs from as early as children aged 9 years, teens, young adults, adults and senior citizens (retired).
-                
-                For the various age groups, the classes are experiential, discussion-based and everyone becomes a LIFElong learner. We need to question life, learn life principles from experts and also hear what God’s perspective is on the issues that all of us find ourselves in from time to time.
-                
-                Every student has to learn more about whose they are, who they are, why they are and how to bring out who and why with friends, family and the society. </p>
-            </div>
-       
-        </div>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li> 
+      </ul>
+    </div>
+    </div>
+  </nav>
+</div>
+  </div>
+  <br><br>
+{% if code == 0 %}
+<div id="class">
+<div class="container" >
+  <div class="row">
+    <div class="col-md--2"></div>
+    <div class="col-md-4">
+      <img src="{% static 'images/think.png' %}" width="500" height="500"  alt="">
+    </div>
+    <div class="col-md-6" style="margin-left: 150px;;" >
+      <br><br><br>
+      <h2>Think, Shift & Change (TSC)</h2><br>
+      <p><b><i>“To do well in life, we must first think well”</i></b> –John Maxwell.<br>
+        We have been taught what to think, but what has been largely missing in the education space is how to think. As a man thinks in his heart so is he, by that TSC is keen on questioning and changing what you think and thereby experiencing different outcomes in every area of life.        
+        Through TSC, the client will explore different thinking skills that propel them to think NEW THOUGHTS based on the Word of God and carefully selected books recommended in the program.
+        We have had University Professors and Domestic Managers sit in the TSC class and all were able to unlock their patterns in the same class. We encourage people to Think, Shift and Change.</p>
     </div>
   </div>
-    <br><br>  
-    <div class="row offerss " id="offerss" >
-        <div id="first" class="col-md-4">
-            <div class="card" id="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for Children</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">This is a course for children aged between 9-13 years.</h6>
-                  <p class="card-text">Children need to develop a concept of life skills to go hand in hand with academic knowledge. This course is designed to help children understand who they are and why they and others, think and act the way they do.
-
-                    Life skills have a major impact on a child’s overall performance. It’s a great benefit when children understand their personality styles and how to communicate with family members and other people.
-                    
-                    Self-Awareness will be strengthened through the use of the Children’s Profile.
-                    
-                    Beyond grades, children will be empowered to appreciate similarities and differences in one another.</p>
-                 
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" id="card2" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for Teens</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">This is a course for teenagers</h6>
-                  <p class="card-text">
-                    The teenage years can be a difficult time to navigate through both for the teens and their parents. At PDI we believe the narrative can be changed through life skills.
-
-                    This program is tailored for the teen who is answering questions about their identity and future. We teach Self Awareness, Emotional Intelligence, Everyday Leadership skills, Communication Skills, Career and general Personal Development skills.We use assessment tools to enhance the training.
-                    
-                    We have also worked with teenagers who face the challenge of drug addiction and lost focus in their academics as a result.
-                    
-                    TRM for Teens is a powerful program because all lasting beings in the mind.
-                  </p> 
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" id="card3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for Young Adults</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">This is a course for young adults eg:campus students</h6>
-                  <p class="card-text">
-                    The majority of the Kenyan population is made up of young adults who are in universities, colleges or working as they study. This program is tailored to transform the youth to think differently and to position them for the global changes inthe job marketand life in general.
-
-                    We believe that our youth can thrive while they are more self-aware. We teach them to understand their life purpose, how to turn their passion into profitable ventures, emotional, financial, spiritual and social intelligence & how to engage in clean fun.
-                  </p>
-                </div>
-              </div>
-        </div>
+</div>
+</div>
+{% elif code == 1 %}
+<div id="class">
+  <div class="container">
+    <br><br><br>
+    <div class="row">
+      <div class="col-md--2"></div>
+      <div class="col-md-4">
+        
+        <img src="{% static 'images/disc.jpeg' %}" width="550" height="350"  alt="">
+      </div>
+      <div class="col-md-6" style="margin-left: 190px;" >
+        <br><br><br>
+        <h2>FULL DISC Personality Profiling</h2><br>
+        <p>This is a 3D assessment with a detailed 28 page report that includes TEAMS profile, 
+          VALUES Profile and DISC assessment. It’s an amazing tool in raising Self Awareness. 
+          It is administered through a 4-hour training & coaching session.</p>
+      </div>
     </div>
-    <div class="join">
-      <h1 style="margin-left: 450px;" > JOIN US TODAY </h1><br>
-      <button type="button" style="margin-left: 490px;"  class="btn btn-dark  btn-banner">Get started</button>
+  </div>
+  <br><br><br>
+</div>
+{% elif code == 2 %}
+<div id="class">
+
+<div class="container">
+  <br><br><br>
+  <div class="row">
+    <div class="col-md--2"></div>
+    <div class="col-md-4">
+      <br>
+      <img src="{% static 'images/children.jpeg' %}" width="550" height="350"  alt="">
+    </div>
+    <div class="col-md-6" style="margin-left: 190px;" >
+      <br><br><br>
+      <h2>The Children’s Profile</h2><br>
+      <p>This is a DISC Personality Profile for children aged between 9- 13.
+        It’s a guide to greater understanding of the Child’s personality 
+        in relation to self and others at home,school and the society.
+        It is a 2 hour coaching program where the coach spends time with the
+        child to help them gain clarity about their uniqueness.</p>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+</div>
+{% elif code == 3 %}
+<div id="class" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+      <li data-target="#demo" data-slide-to="0"></li>
+      <li data-target="#demo" data-slide-to="7"></li>
+      <li data-target="#demo" data-slide-to="8"></li>
+      <li data-target="#demo" data-slide-to="9"></li>
+      <li data-target="#demo" data-slide-to="10"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/purpose.jpeg' %}" alt="Life purpose" width="600" height="500">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/awareness.jpeg' %}" alt="Self awareness" width="600" height="500">
+       
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/EQ.png' %}" alt="Emotional Intelligence" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/sq.png' %}" alt="Spiritual Intelligence" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/financial.jpeg' %}" alt="Financial Intelligence" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/lead.jpeg' %}" alt=" Leadership" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/health.jpeg' %}" alt="Health and Wellness" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/socialint.png' %}" alt="Social Intelligence" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/fun.jpeg' %}" alt="Fun and Recreation" width="600" height="500">
+      </div>
+       <div class="carousel-item">
+        <img src="{% static 'images/strategy.jpeg' %}" alt="5 year strategy plan" width="600" height="500">
+      </div>
+  
+       
     </div>
     
-    <div class="row offerss ">
-      <br><br>
-        <div id="last" class="col-md-4">
-            <div class="card"  id="card4" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for Adults</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">A course unit for adults</h6>
-                  <p class="card-text">Through the TRM for Adults class, many destinies have been rebirthed and reshaped.This has been our major clientele base for the past 9 years because anyone can redefine the trajectory of your life at any season in life.
-
-                    The adults have the advantage of reflecting on their past experiences. This helps them to unlearn, learn and relearn.
-                    
-                    We havemany transformational stories from the adults that have gone through this class. The most celebrated modules in TRM adults are Life Purpose, Financial, Spiritual & Emotional Intelligence; Health and Wellness, writing of the 5 year strategic plan.</p>
-                  
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" id="card5" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for Entrepreneurs</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">A course unit for businesspeople and entrepreneurs</h6>
-                  <p class="card-text">This is tailored for those transitioning from formal employment and for those repositioning ongoing businesses.The dynamics in the business world require constant learning and the ability to adapt to change.
-
-                    The modules taught in this course can be summed up as Thinking for a Change. This is purely one-to-one coaching that is client-driven based on the business needs.
-                    
-                    As a result ofretrenchment, forced resignationand dismissal, some people have been forced to resign; and many find themselves in the waters of entrepreneurship to meet their day-to-day financial needs. This coaching is applicable to them as well.
-                    
-                    Whether you are a seasoned entrepreneur or a start-up, this coaching will provide the much needed support, encouragement and accountability.</p>
-                  
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" id="card6" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">TRM for the Retired to Refired</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">A unit for retired personel</h6>
-                  <p class="card-text">Retiring from formal employment can create some distresseven when one is well prepared and has gone through formal retirement programs that are provided by employers.
-
-                    This program is tailored to redefine the next phase of life after retirement. A meaningful and power-packed adventure is possible after retirement. At PDI we believe in being refired not retired.
-                    
-                    We have many success stories of those who came as retirees and refired their lives. You can live your best life fulfilling life goals and impacting generations through God-given purpose.</p>
-                </div>
-              </div>
-        </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+      </div>
+      <div class="col-md-5" style="margin-left: 10px;" >
+        <br><br><br>
+        <h4>Transformed and Renewed Minds</h4><br>
+        <p>This program has been separated into a few modules. ie:</p>
+        <ul>
+          <li>Clarity of Life Purpose</li>
+          <li>Self-Awareness</li>
+          <li>Emotional Intelligence (EQ)</li>
+          <li>Spiritual Intelligence (SQ)</li>
+          <li>Financial Intelligence</li>
+          <li>Leadership</li>
+          <li>Health & Wellness</li>
+          <li>Social Intelligence (Relationships)</li>
+          <li>Fun & Recreation</li>
+          <li>The 5 Year Strategic Plan</li>
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
+  <br><br>
+  
 </div>
 
+{% endif %}
 {% endblock %}

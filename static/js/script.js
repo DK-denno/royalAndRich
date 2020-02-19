@@ -35,7 +35,7 @@ $(document).ready(function(){
   },10000,'swing')
   $('.banner-heading').animate({
     opacity: '2',
-    marginLeft: '600px'
+    marginLeft: '400px'
   },4000,'swing')
   
   $('.cont').animate({
@@ -52,27 +52,81 @@ $(document).ready(function(){
         $(".abouts").fadeIn(4000);
            
     };
+
+    function goAnimations(element){
+        $(element).animate({
+          opacity:'0',
+          marginRight:'700px',
+          marginTop:'-600',
+        });
+        // $('children').fadeIn(3000);
+    }
+    function comeAnimations(element){
+      $(element).animate({
+        opacity:'2',
+        alignment:'center',
+        marginRight:'0',
+        marginTop:'0',
+        height:'600',
+      });
+      $('.children').fadeIn(3000);
+    }
     //select box syntax
-    $('.catss').click(function(){
-      var value =   $('.catss option:selected').text()
-      switch(value){
-        case "Choose Category":
-          alert('rada');
-          break;
-        case "TRM for Children":
-          alert('rada');
-          break;
-        case "TRM for Teens":
-          alert('rada');
-          break;
-        case "TRM for Young Adults":
-            alert('rada');
-        case "TRM for Adults":
-            alert('rada');
-        case "TRM for Enterpreneurs":
-            alert('rada');
-        case "TRM for the retired":
-            alert('rada');
-      }
-    });
+    // $('.catss').click(function(){
+    //   var value =   $('.catss option:selected').text()
+    //   switch(value){
+    //     case "Choose Category":
+    //       comeAnimations(".child");
+    //       comeAnimations(".teen");
+    //       comeAnimations(".youngAdult");
+    //       comeAnimations(".Adult");
+    //       comeAnimations(".entrepreneur");
+    //       comeAnimations(".retired");        
+    //       break;
+    //     case "TRM for Children":
+    //       comeAnimations(".child");
+    //       goAnimations(".teen");
+    //       goAnimations(".youngAdult");
+    //       goAnimations(".Adult");
+    //       goAnimations(".entrepreneur");
+    //       goAnimations(".retired");   
+    //       break;
+    //     case "TRM for Teens":
+    //       goAnimations(".child");
+    //       comeAnimations(".teen");
+    //       goAnimations(".youngAdult");
+    //       goAnimations(".Adult");
+    //       goAnimations(".entrepreneur");
+    //       goAnimations(".retired");     
+    //       break;
+    //     case "TRM for Young Adults":
+    //       goAnimations(".child");
+    //       goAnimations(".teen");
+    //       comeAnimations(".youngAdult");
+    //       goAnimations(".Adult");
+    //       goAnimations(".entrepreneur");
+    //       goAnimations(".retired");   
+    //     case "TRM for Adults":
+    //       goAnimations(".child");
+    //       goAnimations(".teen");
+    //       goAnimations(".youngAdult");
+    //       comeAnimations(".Adult");
+    //       goAnimations(".entrepreneur");
+    //       goAnimations(".retired");   
+    //     case "TRM for Entrepreneurs":
+    //       goAnimations(".child");
+    //       goAnimations(".teen");
+    //       goAnimations(".youngAdult");
+    //       goAnimations(".Adult");
+    //       comeAnimations(".entrepreneur");
+    //       goAnimations(".retired");      
+    //     case "TRM for the retired":
+    //       goAnimations(".child");
+    //       goAnimations(".teen");
+    //       goAnimations(".youngAdult");
+    //       goAnimations(".Adult");
+    //       goAnimations(".entrepreneur");
+    //       comeAnimations(".retired");   
+    //   }
+    // });
 });
