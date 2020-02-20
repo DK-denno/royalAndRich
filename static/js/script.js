@@ -14,10 +14,10 @@ $(document).ready(function(){
       
       function scrollFunction() {
         
-      if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+      if (document.body.scrollTop >= 1000 || document.documentElement.scrollTop >= 1000) {
         $("#suscribe").animate({
           opacity: '2',
-        },4000) 
+        },10000) 
       }
       
   

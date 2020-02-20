@@ -66,11 +66,7 @@
    color: white;
 }
 
-.card:hover{
-   background-color: black;
-   color: white;
-   zoom: 120%;
-}
+
 #classes{
    background-image: url('');
    background-attachment: fixed;
